@@ -2,7 +2,8 @@
   "collectionName": "components_menu_menus",
   "info": {
     "name": "menu",
-    "icon": "bars"
+    "icon": "bars",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -20,11 +21,19 @@
       "type": "text",
       "required": true
     },
-    "menu_link": {
+    "logo_link": {
+      "type": "string",
+      "required": true
+    },
+    "new_tabe": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "menu": {
       "type": "component",
       "repeatable": true,
-      "component": "menu.menu-links",
-      "required": true
+      "component": "menu.menu-links"
     }
   }
 }
